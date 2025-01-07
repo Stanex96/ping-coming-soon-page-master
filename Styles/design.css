@@ -1,0 +1,142 @@
+:root {
+    --blue: hsl(223, 87%, 63%);
+    --paleBlue: hsl(223, 100%, 88%);
+    --lightRed: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --veryDarkBlue: hsl(209, 33%, 12%);
+    --attribution: hsl(228, 45%, 44%);
+}
+
+@font-face {
+    font-family: Franklin;
+    src: url(./fonts/static/LibreFranklin-Medium.ttf);
+}
+
+@font-face {
+    font-family: Franklin-Bold;
+    src: url(./fonts/static/LibreFranklin-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Franklin-Light;
+    src: url(./fonts/static/LibreFranklin-ExtraLight.ttf);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: Franklin;
+    padding: 5rem;
+    font-size: 20px;
+    gap: 3.5rem;
+}
+
+strong {
+    color: var(--veryDarkBlue);
+    font-weight: bold;
+    font-family: Franklin-Bold !important;
+}
+
+h1 {
+    color: var(--gray);
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-size: 55px !important;
+    font-family: Franklin-Light !important;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header p {
+    text-align: center;
+}
+
+#logo {
+    align-self: center;
+}
+
+input {
+    width: 225px;
+    height: 45px;
+    max-height: 45px !important;
+    border-radius: 25px;
+    border: 1px solid var(--gray)
+}
+
+.mainUp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.mainUp div {
+    width: 175px;
+    height: 45px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--blue);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mainUp div:hover {
+    background-color: var(--paleBlue);
+}
+
+#mainImg {
+    width: 35%;
+    height: auto;
+    align-self: center;
+}
+
+.mainCenter {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rights {
+    font-size: 12px;
+    color: var(--gray);
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    color: var(--veryDarkBlue);
+    transition: color 0.3s ease;
+}
+
+.attribution a:hover {
+    color: var(--lightRed);
+}
+
+.socialMedias {
+    display: flex;
+    flex-direction: row;
+    gap: 2.8rem;
+    margin-bottom: 1.2rem;
+}
