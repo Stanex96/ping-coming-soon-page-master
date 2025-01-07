@@ -15,7 +15,8 @@ notify.addEventListener('click', () => {
         message.textContent      = 'Please, enter a validate e-mail !';
         message.style.fontSize   = '20px';
         message.style.color      = 'crimson';
-        message.style.fontFamily = 'Franklin-Light'
+        message.style.fontFamily = 'Franklin-Light';
+        input.style.border       = '1.5px solid red';
         if(!mainUp.contains(message)) {
             mainUp.appendChild(message);
         }
@@ -23,7 +24,8 @@ notify.addEventListener('click', () => {
         message.textContent      = 'You\'ll be notified !';
         message.style.fontSize   = '20px';
         message.style.color      = 'grey';
-        message.style.fontFamily = 'Franklin-Light'
+        message.style.fontFamily = 'Franklin-Light';
+        input.style.border       = '1.5px solid grey';
         if(!mainUp.contains(message)) {
             mainUp.appendChild(message);
         }

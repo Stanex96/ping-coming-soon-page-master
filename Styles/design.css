@@ -140,3 +140,53 @@ footer {
     gap: 2.8rem;
     margin-bottom: 1.2rem;
 }
+
+@media (min-width: 350px) and (max-width: 750px) {
+    body {
+        padding: 3rem;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 40px !important;
+    }
+
+    #mainImg {
+        width: 50%;
+    }
+
+    .mainUp {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .mainUp div {
+        width: 175px;
+        height: 35px;
+    }
+
+    input {
+        width: 175px;
+        height: 35px;
+    }
+
+    .mainCenter {
+        margin-top: 2rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    .socialMedias {
+        gap: 1.5rem;
+    }
+
+    .rights {
+        font-size: 10px;
+    }
+
+    .attribution {
+        font-size: 12px;
+    }
+}
